@@ -1,37 +1,43 @@
 #include <iostream>
-#include <conio.h>
 
 int main()
 {
-    char count, code; //Count отвечает за сохранение символа направления движения, code за получение кода символа
+    char count = ' ', code; //Count отвечает за сохранение символа направления движения, code за получение кода символа
 
     std::cout << "Please set the direction of the snake:" << std::endl;
-    std::cin >> code;
 
-    while (true) 
+    while (count != '0')
     {
+        std::cin >> code;
+
         switch (code) 
         {
             case 'w':
             case 'W':
                 std::cout << '^' << std::endl;
+                count = code;
                 break;
             case 's':
             case 'S':
                 std::cout << 'v' << std::endl;
+                count = code;
                 break;
             case 'a':
             case 'A':
                 std::cout << '<' << std::endl;
+                count = code;
                 break;
             case 'd':
             case 'D':
                 std::cout << '>' << std::endl;
+                count = code;
                 break;
             case '0':
+                count = code;
                 break;
+            default:
+                std::cout << "Error." << std::endl;
         }
-        break;
     }
 }
 
