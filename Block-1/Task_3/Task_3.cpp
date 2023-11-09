@@ -9,21 +9,13 @@ int main()
     std::cout << "Directions are set by arrows." << std::endl;
     std::cout << "Exit - ESC." << std::endl;
 
-    enum sKeys //Codes of symbols
-    {
-        Forward = 0x77,
-        Back = 0x73,
-        Left = 0x61,
-        Right = 0x64,
-        ESC = 0x1B
-    };
-
     enum aKeys //Codes of arrows
     {
-        Up = 0x26,
-        Down = 0x28,
-        aLeft = 0x25,
-        aRight = 0x27,
+        Up = 72,
+        Down = 80,
+        aLeft = 75,
+        aRight = 77,
+        ESC = 0x1B
     };
 
     while (count != ESC)
