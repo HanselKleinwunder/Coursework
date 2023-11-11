@@ -1,0 +1,9 @@
+﻿  Snake.cpp
+E:\Lernen\Documents\IT\Repositories\Coursework\Block-1\Task_2\Snake.h(3,24): warning C4305: 'initializing': truncation from 'int' to 'char'
+E:\Lernen\Documents\IT\Repositories\Coursework\Block-1\Task_2\Snake.h(3,20): warning C4309: 'initializing': truncation of constant value
+E:\Lernen\Documents\IT\Repositories\Coursework\Block-1\Task_2\Snake.h(4,24): warning C4305: 'initializing': truncation from 'int' to 'char'
+E:\Lernen\Documents\IT\Repositories\Coursework\Block-1\Task_2\Snake.h(4,20): warning C4309: 'initializing': truncation of constant value
+E:\Lernen\Documents\IT\Repositories\Coursework\Block-1\Task_2\Snake.cpp(3,6): error C2374: 'head_symbol': redefinition; multiple initialization
+E:\Lernen\Documents\IT\Repositories\Coursework\Block-1\Task_2\Snake.h(3): message : see declaration of 'head_symbol'
+E:\Lernen\Documents\IT\Repositories\Coursework\Block-1\Task_2\Snake.cpp(4,6): error C2374: 'tail_symbol': redefinition; multiple initialization
+E:\Lernen\Documents\IT\Repositories\Coursework\Block-1\Task_2\Snake.h(4): message : see declaration of 'tail_symbol'

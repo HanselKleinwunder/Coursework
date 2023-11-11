@@ -1,52 +1,12 @@
 #include <iostream>
+#include "Snake.h"
+#include "Game.h"
+#include "Const.h"
 #include <conio.h>
 
 int main()
 {
-    char count = ' '; //Count отвечает за сохранение символа направления движения
-
-    std::cout << "Please set the direction of the snake." << std::endl;
-    std::cout << "Directions are set by keys: forward - w, back - s, left - a, right - d." << std::endl;
-    std::cout << "Exit - ESC." << std::endl;
-
-    enum vKeys //Codes of symbols
-    {
-        Forward = 0x77,
-        Back = 0x73,
-        Left = 0x61,
-        Right = 0x64,
-        ESC = 0x1B
-    };
-
-    while (count != ESC)
-    {
-        char eCode = _getch(); //Enter of symbol
-
-        switch (eCode)
-        {
-            case Forward:
-                std::cout << '^' << std::endl;
-                count = eCode;
-                break;
-            case Back:
-                std::cout << 'v' << std::endl;
-                count = eCode;
-                break;
-            case Left:
-                std::cout << '<' << std::endl;
-                count = eCode;
-                break;
-            case Right:
-                std::cout << '>' << std::endl;
-                count = eCode;
-                break;
-            case ESC:
-                count = eCode;
-                break;
-            default:
-                std::cout << "Error. Please, enter correct character." << std::endl;
-        }
-    }
+    std::cout << head_symbol << std::endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
