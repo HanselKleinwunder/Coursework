@@ -1,12 +1,31 @@
 #include <iostream>
+#include <windows.h>
+#include <conio.h>
 #include "Snake.h"
 #include "Game.h"
 #include "Const.h"
-#include <conio.h>
 
 int main()
 {
-    std::cout << head_symbol << std::endl;
+    unsigned int x = 0; //Координаты курсора
+    int snake_size = 1;
+
+    while (true) 
+    {
+        Sleep(300);
+        system("cls");
+
+        for (int i = 0; i < x; i++)
+        {
+            std::cout << ' ' << std::endl;
+        }
+        std::cout << head_symbol << std::endl;
+    }
+
+    std::cout << tail_symbol << std::endl;
+
+    
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
