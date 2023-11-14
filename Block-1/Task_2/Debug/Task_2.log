@@ -1,3 +1,7 @@
-﻿  Task_2.cpp
-E:\Lernen\Documents\IT\Repositories\Coursework\Block-1\Task_2\Task_2.cpp(18,27): warning C4018: '<': signed/unsigned mismatch
-  Task_2.vcxproj -> E:\Lernen\Documents\IT\Repositories\Coursework\Block-1\Debug\Task_2.exe
+﻿  Snake.cpp
+  Game.cpp
+  Task_2.cpp
+D:\Documents\IT\Git\Repositories\Coursework\Block-1\Task_2\Task_2.cpp(20,31): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Documents\IT\Git\Repositories\Coursework\Block-1\Task_2\Task_2.cpp(34,31): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+  Task_2.vcxproj -> D:\Documents\IT\Git\Repositories\Coursework\Block-1\Debug\Task_2.exe

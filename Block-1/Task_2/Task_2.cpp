@@ -12,14 +12,38 @@ int main()
 
     while (true) 
     {
-        Sleep(300);
+        Sleep(100);
         system("cls");
 
-        for (int i = 0; i < x; i++)
+        if (snake_size == 1) 
         {
-            std::cout << ' ' << std::endl;
+            for (int i = 0; i < x; i++)
+            {
+                std::cout << ' ';
+            }
+
+            std::cout << head_symbol;
+
+            if (x < columns)
+            {
+                x++;
+            }
         }
-        std::cout << head_symbol << std::endl;
+        else 
+        {
+            for (int i = 0; i < x; i++)
+            {
+                std::cout << ' ';
+            }
+
+            std::cout << tail_symbol << head_symbol;
+
+            if (x < columns)
+            {
+                x++;
+            }
+        }
+
     }
 
     std::cout << tail_symbol << std::endl;

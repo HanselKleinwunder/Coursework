@@ -3,55 +3,7 @@
 
 int main()
 {
-    unsigned int count = ' '; //Count отвечает за сохранение символа направления движения
-
-    std::cout << "Please set the direction of the snake." << std::endl;
-    std::cout << "Directions are set by arrows." << std::endl;
-    std::cout << "Exit - ESC." << std::endl;
-
-    enum aKeys //Codes of arrows
-    {
-        Up = 72,
-        Down = 80,
-        aLeft = 75,
-        aRight = 77,
-        ESC = 0x1B
-    };
-
-    while (count != ESC)
-    {
-        unsigned int eCode = _getch(); //Enter of arrows
-
-        if (eCode == 0xE0 || eCode == 0)
-        {
-            eCode = _getch();
-        }
-
-        switch (eCode)
-        {
-            case Up:
-                std::cout << '^' << std::endl;
-                count = eCode;
-                break;
-            case Down:
-                std::cout << 'v' << std::endl;
-                count = eCode;
-                break;
-            case aLeft:
-                std::cout << '<' << std::endl;
-                count = eCode;
-                break;
-            case aRight:
-                std::cout << '>' << std::endl;
-                count = eCode;
-                break;
-            case ESC:
-                count = eCode;
-                break;
-            default:
-                std::cout << "Error. Please, enter correct character." << std::endl;
-        }
-    }
+	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
