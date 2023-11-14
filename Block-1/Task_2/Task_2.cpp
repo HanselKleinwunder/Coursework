@@ -1,21 +1,25 @@
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
+#include "Const.h"
 #include "Snake.h"
 #include "Game.h"
-#include "Const.h"
 
+//Сделать так, чтобы выводилось заданное число символов snake_size
+//Т.е., если 4, то голова + 3 части тела
+//Сделать это вторым циклом. Только сначала выводится тело, потом голова
 int main()
 {
     unsigned int x = 0; //Координаты курсора
-    int snake_size = 1;
+    snake_size = 4;
+    timeout = 500;
 
-    while (true) 
+    while (x < columns) 
     {
-        Sleep(100);
+        
         system("cls");
 
-        if (snake_size == 1) 
+       // if (snake_size == 1) 
         {
             for (int i = 0; i < x; i++)
             {
@@ -24,13 +28,13 @@ int main()
 
             std::cout << head_symbol;
 
-            if (x < columns)
-            {
+            //if (x < columns)
+            //{
                 x++;
-            }
+           //}
         }
-        else 
-        {
+    //    else 
+      /*  {
             for (int i = 0; i < x; i++)
             {
                 std::cout << ' ';
@@ -42,11 +46,13 @@ int main()
             {
                 x++;
             }
-        }
+        }*/
+
+        Sleep(timeout);
 
     }
 
-    std::cout << tail_symbol << std::endl;
+  //  std::cout << tail_symbol << std::endl;
 
     
 
