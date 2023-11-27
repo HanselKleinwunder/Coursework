@@ -1,3 +1,5 @@
 #pragma once
-int maxSnakeSize[L];
+extern int maxSnakeSize[];
+int snake_x[];
+DIRECTION direction;
 
