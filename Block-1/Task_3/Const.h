@@ -17,5 +17,8 @@ enum vKeys //Codes of symbols
 
 enum DIRECTION
 {
-    
+    Forward = 0x77,
+    Back = 0x73,
+    Left = 0x61,
+    Right = 0x64,
 };
