@@ -1,6 +1,7 @@
 #include "Const.h"
 #include "Snake.h"
 
-int maxSnakeSize[L];
-int snake_x[L];
+int snake_size;
+int maxSnakeSize[L] = {0};
+int snake_x[L] = {0};
 DIRECTION direction{};

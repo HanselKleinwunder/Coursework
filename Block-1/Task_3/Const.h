@@ -6,7 +6,7 @@ const char field_symbol = ' ';
 const int columns = 20;
 const int L = columns - 2;
 
-enum vKeys //Codes of symbols
+enum KEYS
 {
     Forward = 0x77,
     Back = 0x73,
@@ -17,8 +17,6 @@ enum vKeys //Codes of symbols
 
 enum DIRECTION
 {
-    Forward = 0x77,
-    Back = 0x73,
-    Left = 0x61,
-    Right = 0x64,
+    LEFT = 0x61,
+    RIGHT = 0x64,
 };
